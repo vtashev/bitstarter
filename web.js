@@ -11,7 +11,7 @@ var buf = new Buffer(fs.readFileSync("index.html"));
 //console.log(buf.toString("utf-8", 0, 28));
 
 app.get('/', function(request, response) {
-  response.send(buf.toString("utf-8",0,28))
+  response.send(buf.toString("utf-8"))
 });
 
 var port = process.env.PORT || 5000;
